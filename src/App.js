@@ -9,22 +9,34 @@ Routes
 import Home from "./Routes/Home";
 import Place from "./Routes/Place";
 
+const id1 = "Sema";
+const id2 = "MMCA";
+
 function App() {
   return (
-    <HashRouter>
-  <header>
+  <HashRouter>
+
+    <header>
       <NavLink exact to="/" className="nav-text home">
         Home
       </NavLink>
-      <NavLink exact to="/Place" className="nav-text home">
-        Place
+      <NavLink to={`/Place/${id1}`}>
+        SeMA
       </NavLink>
-  </header>
-  <div className="content">
-    <Route exact path="/" component={Home}/>
-    <Route path="/Place" component={Place}/>
-  </div>
-</HashRouter>
+      <NavLink to={`/Place/${id2}`}>
+        MMCA
+      </NavLink>
+    </header>
+
+    <div className="content">
+      <Route exact path="/">
+        <Home/>
+      </Route>
+      <Route exact path={"/Place/:id"} >
+        <Place/>
+      </Route>
+    </div>
+  </HashRouter>
   );
 }
 
