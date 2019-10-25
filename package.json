@@ -2,7 +2,7 @@
   "name": "seoul-city",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hyeleek/Seoul-Culture-City#readme",
+  "homepage": "https://github.com/hyeleek/Seoul-Culture-City",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.11.0",
