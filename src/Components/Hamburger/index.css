@@ -1,0 +1,10 @@
+.hamburger{
+  width : 40px;
+}
+.bar{
+  align-self: center;
+  width: 30px;
+  height: 2px;
+  background-color: var(--navy);
+  margin: 6px auto;
+}

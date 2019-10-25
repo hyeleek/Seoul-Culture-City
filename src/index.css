@@ -1,0 +1,28 @@
+/*=====================
+OVERALL DESIGN GUIDE
+=====================*/
+#root{
+  position : absolute;
+  left : 0;
+  right : 0;
+  top : 0;
+  bottom: 0;
+}
+
+html, #all {
+	height: 100%;
+	/*setting global variables */
+  --navy : #1A3365;
+  --white: #FFFFFF;
+	--yellow: #FFBB00;
+	--coral: #FF4343;
+}
+body {
+	width: 100%;
+	height: 100%;
+  font-family: "Lato";
+	font-weight: 300;
+  font-style: italic;
+  font-size: 32px;
+  color : var(--navy);
+}

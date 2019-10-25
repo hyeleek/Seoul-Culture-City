@@ -29,5 +29,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "[Programming Usable Interface] Assignment 6 - Seoul Culture City",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeleek/Seoul-Culture-City.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyeleek/Seoul-Culture-City/issues"
+  },
+  "homepage": "https://github.com/hyeleek/Seoul-Culture-City#readme"
 }

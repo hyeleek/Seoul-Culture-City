@@ -8,36 +8,48 @@ Routes
 =====================*/
 import Home from "./Routes/Home";
 import Place from "./Routes/Place";
+/*=====================
+Components
+=====================*/
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import Hamburger from "./Components/Hamburger";
 
-const id1 = "Sema";
-const id2 = "MMCA";
+class App extends Component {
 
-function App() {
-  return (
-  <HashRouter>
 
-    <header>
-      <NavLink exact to="/" className="nav-text home">
-        Home
-      </NavLink>
-      <NavLink to={`/Place/${id1}`}>
-        SeMA
-      </NavLink>
-      <NavLink to={`/Place/${id2}`}>
-        MMCA
-      </NavLink>
-    </header>
+  state = {
+      collapsed : true
+  }
 
-    <div className="content">
-      <Route exact path="/">
-        <Home/>
-      </Route>
-      <Route exact path={"/Place/:id"} >
-        <Place/>
-      </Route>
-    </div>
-  </HashRouter>
-  );
-}
+  toggleNavigation = () => {
+    this.setState({
+      collapsed : !this.state.collapsed
+    })
+  }
+
+  render() {
+    const { collapsed } = this.state;
+    return (
+      <div className="container">
+        <Navbar
+          toggleNavigation={this.toggleNavigation}
+          collapsed={collapsed}
+        />
+        <div className="content">
+          <Hamburger toggleNavigation={this.toggleNavigation} />
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path={"/Place/:id"} >
+            <Place/>
+          </Route>
+          <Footer/>
+        </div>
+      </div>
+    );
+  }
+
+};
 
 export default App;
