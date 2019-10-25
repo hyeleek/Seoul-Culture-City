@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hyeleek/Seoul-Culture-City/static/css/main.e3f3aa61.chunk.css",
+    "main.js": "/hyeleek/Seoul-Culture-City/static/js/main.9736f82a.chunk.js",
+    "main.js.map": "/hyeleek/Seoul-Culture-City/static/js/main.9736f82a.chunk.js.map",
+    "runtime-main.js": "/hyeleek/Seoul-Culture-City/static/js/runtime-main.e55c58e8.js",
+    "runtime-main.js.map": "/hyeleek/Seoul-Culture-City/static/js/runtime-main.e55c58e8.js.map",
+    "static/js/2.42c83553.chunk.js": "/hyeleek/Seoul-Culture-City/static/js/2.42c83553.chunk.js",
+    "static/js/2.42c83553.chunk.js.map": "/hyeleek/Seoul-Culture-City/static/js/2.42c83553.chunk.js.map",
+    "index.html": "/hyeleek/Seoul-Culture-City/index.html",
+    "precache-manifest.c114c4da970beb8f852f7f6be1458273.js": "/hyeleek/Seoul-Culture-City/precache-manifest.c114c4da970beb8f852f7f6be1458273.js",
+    "service-worker.js": "/hyeleek/Seoul-Culture-City/service-worker.js",
+    "static/css/main.e3f3aa61.chunk.css.map": "/hyeleek/Seoul-Culture-City/static/css/main.e3f3aa61.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e55c58e8.js",
+    "static/js/2.42c83553.chunk.js",
+    "static/css/main.e3f3aa61.chunk.css",
+    "static/js/main.9736f82a.chunk.js"
+  ]
+}
