@@ -1,9 +1,10 @@
 .container {
-  position : absolute;
+  position : fixed;
   left : 0;
   right : 0;
   top : 0;
   bottom: 0;
+  overflow: auto;
 }
 .content {
   position : absolute;
@@ -11,8 +12,6 @@
   right : 0;
   top : 0;
   bottom: 0;
-  padding : 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }

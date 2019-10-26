@@ -1,10 +1,31 @@
+.top-items{
+  display: flex;
+  flex-direction: row;
+  height : 50px;
+  position: relative;
+  padding-left: 10px;
+}
 .hamburger{
+  left : 30px;
+  top : 30px;
   width : 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .bar{
   align-self: center;
   width: 30px;
   height: 2px;
   background-color: var(--navy);
-  margin: 6px auto;
+  margin: 3px auto;
+}
+.top-items > .home-icon {
+  text-decoration: none;
+  margin : 10px 0px;
+  padding: 3px 15px;
+  font-size: 24px;
+  color : var(--navy);
+  font-weight : 400;
+  font-style: normal;
 }

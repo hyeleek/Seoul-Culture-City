@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Route, NavLink, HashRouter} from "react-router-dom";
+import  { NavLink } from "react-router-dom";
 import "./index.css";
 import InfoList from "../../shared/infoList.js";
 
@@ -28,6 +28,7 @@ class Navbar extends Component {
           { InfoList.map( (info, idx) => {
               return (
                 <NavLink
+                  key={idx}
                   to={`/Place/${info.id}`}
                   className="nav-text"
                   onClick={() => toggleNavigation()}

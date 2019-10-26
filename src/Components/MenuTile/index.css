@@ -1,0 +1,27 @@
+.tile {
+  position : relative;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width : 200px;
+  height : 200px;
+  color : var(--navy);
+  border : 1px solid var(--navy);
+  text-decoration: none;
+  text-align: center;
+}
+
+.tile:hover{
+  background-color: var(--navy);
+  color : var(--yellow);
+}
+
+.tile > img{
+  position : absolute;
+  width : 30px;
+  height : 30px;
+  top : 20px;
+  right : 20px;
+}
