@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     const { collapsed } = this.state;
     return (
-      <div className="container">
+      <HashRouter className="container">
         { !collapsed &&
           <Navbar
           toggleNavigation={this.toggleNavigation}
@@ -47,7 +47,7 @@ class App extends Component {
             <Place/>
           </Route>
         </div>
-      </div>
+      </HashRouter>
     );
   }
 
