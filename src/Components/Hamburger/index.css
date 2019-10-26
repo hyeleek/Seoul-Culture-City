@@ -23,9 +23,13 @@
 .top-items > .home-icon {
   text-decoration: none;
   margin : 10px 0px;
-  padding: 3px 15px;
+  padding: 0px 10px;
   font-size: 24px;
   color : var(--navy);
   font-weight : 400;
   font-style: normal;
+}
+.top-items > .home-icon:hover {
+  color : var(--yellow);
+  background-color: var(--navy);
 }

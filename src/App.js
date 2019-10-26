@@ -32,6 +32,12 @@ class App extends Component {
     const { collapsed } = this.state;
     return (
       <div className="container">
+        { !collapsed &&
+          <Navbar
+          toggleNavigation={this.toggleNavigation}
+          collapsed={collapsed}
+          />
+        }
         <div className="content">
           <Hamburger toggleNavigation={this.toggleNavigation} />
           <Route exact path="/">
@@ -41,11 +47,6 @@ class App extends Component {
             <Place/>
           </Route>
         </div>
-        { !collapsed &&
-          <Navbar
-          toggleNavigation={this.toggleNavigation}
-          collapsed={collapsed}
-        />}
       </div>
     );
   }
