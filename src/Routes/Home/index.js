@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import './index.css';
 import InfoList from "../../shared/infoList.js";
@@ -7,8 +7,8 @@ import MenuTile from "../../Components/MenuTile";
 import Navbar from "../../Components/Navbar";
 
 class Home extends Component {
+
   render() {
-    const { collapsed, toggleNavigation } = this.props;
     return (
       <div className="homepage">
           <h2>SEOUL, <br/> THE CULTURE CITY</h2>

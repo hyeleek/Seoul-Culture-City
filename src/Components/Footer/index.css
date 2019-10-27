@@ -1,0 +1,9 @@
+.footer-container {
+  background-color: var(--white);
+  font-size : 16px;
+  margin : 10px 80px;
+  border-top: solid 1px var(--navy);
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}

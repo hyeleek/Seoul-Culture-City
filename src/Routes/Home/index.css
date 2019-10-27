@@ -14,13 +14,13 @@
 
 .homepage >p{
   font-size: 20px;
-  width  : 80%;
+  width  : 70%;
   line-height: 1.6;
   margin : 50px 0px;
 }
 
 .homepage > #title-container{
-  width : 80%;
+  width : 70%;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 200px);

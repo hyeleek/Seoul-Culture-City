@@ -4,9 +4,11 @@ import './index.css';
 
 class Footer extends Component {
   render() {
-    return (<div>
-        <p>Footer</p>
-    </div>);
+    return (
+      <div className="footer-container">
+        <p>Seoul, Culture City</p>
+      </div>
+    );
   }
 }
 

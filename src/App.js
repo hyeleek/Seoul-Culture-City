@@ -41,7 +41,7 @@ class App extends Component {
         <div className="content">
           <Hamburger toggleNavigation={this.toggleNavigation} />
           <Route exact path="/">
-            <Home/>
+            <Home coll/>
           </Route>
           <Route exact path={"/Place/:id"} >
             <Place/>

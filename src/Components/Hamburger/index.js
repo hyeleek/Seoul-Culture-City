@@ -14,7 +14,7 @@ class Hamburger extends Component {
           <div className="bar"></div>
         </div>
         <Link
-          exact to="/"
+          to="/"
           className="home-icon"
         >
           SEOUL
