@@ -21,27 +21,21 @@ class App extends Component {
 
   constructor(props){
     super(props);
-    this.state = {
-        collapsed : true,
-        pinnedInfo : JSON.parse(window.localStorage.getItem("pinnedInformation"))
-    }
-  }
 
-  componentDidMount(){
-    this.setUpLocalStroage();
-  }
-
-  setUpLocalStroage = () => {
-    const { pinnedInfo } = this.state;
-    if ( pinnedInfo === null){
-      var newInfo = {};
+    const temp = JSON.parse(window.localStorage.getItem("pinnedInformation"));
+    var newInfo = {};
+    if ( temp === null){
       InfoList.forEach(function(place) {
         newInfo[place.id] = false;
       });
-      this.setState({
-        pinnedInfo : newInfo
-      })
       window.localStorage.setItem('pinnedInformation', JSON.stringify(newInfo));
+    } else {
+      newInfo = temp;
+    }
+
+    this.state = {
+        collapsed : true,
+        pinnedInfo : newInfo
     }
   }
 
