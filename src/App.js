@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Route, NavLink, HashRouter} from "react-router-dom";
+import {Route, HashRouter} from "react-router-dom";
 
 import './App.css';
 
@@ -14,12 +14,49 @@ Components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Hamburger from "./Components/Hamburger";
+import InfoList from "./shared/infoList.js";
+
 
 class App extends Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+        collapsed : true,
+        pinnedInfo : JSON.parse(window.localStorage.getItem("pinnedInformation"))
+    }
+  }
 
-  state = {
-      collapsed : true
+  componentDidMount(){
+    this.setUpLocalStroage();
+  }
+
+  setUpLocalStroage = () => {
+    const { pinnedInfo } = this.state;
+    if ( pinnedInfo === null){
+      var newInfo = {};
+      InfoList.forEach(function(place) {
+        newInfo[place.id] = false;
+      });
+      this.setState({
+        pinnedInfo : newInfo
+      })
+      window.localStorage.setItem('pinnedInformation', JSON.stringify(newInfo));
+    }
+  }
+
+  getPinnedPlace = (idx) => {
+    const { pinnedInfo } = this.state;
+    return pinnedInfo[idx];
+  }
+
+  setPinnedPlace = (idx) => {
+    const { pinnedInfo } = this.state;
+    pinnedInfo[idx] = !pinnedInfo[idx];
+    this.setState({
+      pinnedInfo : pinnedInfo
+    })
+    window.localStorage.setItem('pinnedInformation', JSON.stringify(pinnedInfo));
   }
 
   toggleNavigation = () => {
@@ -29,7 +66,7 @@ class App extends Component {
   }
 
   render() {
-    const { collapsed } = this.state;
+    const { collapsed, pinnedInfo} = this.state;
     return (
       <HashRouter className="container">
         { !collapsed &&
@@ -41,10 +78,17 @@ class App extends Component {
         <div className="content">
           <Hamburger toggleNavigation={this.toggleNavigation} />
           <Route exact path="/">
-            <Home coll/>
+            <Home
+              pinnedInfo={pinnedInfo}
+              getPinnedPlace={this.getPinnedPlace}
+            />
           </Route>
           <Route exact path={"/Place/:id"} >
-            <Place/>
+            <Place
+              pinnedInfo = {pinnedInfo}
+              getPinnedPlace={this.getPinnedPlace}
+              setPinnedPlace = {this.setPinnedPlace}
+            />
           </Route>
         </div>
       </HashRouter>

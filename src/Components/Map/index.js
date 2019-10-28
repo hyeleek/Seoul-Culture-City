@@ -11,10 +11,6 @@ const mapStyles = {
 
 class LocationMap extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   render() {
     const { latitude, longtitude } = this.props;
     return (

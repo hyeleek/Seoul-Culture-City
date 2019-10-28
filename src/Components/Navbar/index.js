@@ -4,11 +4,6 @@ import "./index.css";
 import InfoList from "../../shared/infoList.js";
 
 class Navbar extends Component {
-
-  constructor(props){
-    super(props);
-  }
-
   render() {
     const { toggleNavigation, collapsed } = this.props;
     return (

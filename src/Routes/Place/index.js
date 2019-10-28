@@ -1,9 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 import { useParams } from "react-router";
-import { Link, NavLink } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-import Footer from "../../Components/Footer";
 import Map from "../../Components/Map";
 import InfoList from "../../shared/infoList.js";
 
@@ -16,33 +14,38 @@ import empty from "../../shared/Empty.svg";
 
 const mod = (x, n) => (x % n + n) % n
 
-function refreshPage(){
-    window.location.reload();
-}
-
 const Place = (props) => {
+
   const { id } = useParams();
   const place = InfoList.filter(info => info.id === id)[0];
   const currentIndex  = InfoList.indexOf(place);
   const { name, wallpaper, photos, homepage, address, longtitude, latitude, description } = place;
+
   return (
     <div className="detail-page">
-      <img className={"wallpaper"} src={wallpaper} />
+      <img className={"wallpaper"} src={wallpaper} alt={name}/>
       <div className="header">
           <Link
             to={`/Place/${InfoList[mod(currentIndex-1, InfoList.length)].id}`}
             className="arrow-container"
           >
-            <img src={left}/>
+            <img src={left} alt={"left"}/>
           </Link>
           <h2>{`${name}`}</h2>
           <Link
             to={`/Place/${InfoList[mod(currentIndex+1, InfoList.length)].id}`}
             className="arrow-container"
           >
-              <img src={right}/>
+              <img src={right} alt={"right"}/>
           </Link>
-          <img className={"pin"} src={props.pinned? heart: empty} />
+          <img
+            className = {"pin"}
+            src = {props.getPinnedPlace(id)? heart: empty}
+            onClick={() => props.setPinnedPlace(id)}
+            alt={name}
+            onMouseOver={e => (e.currentTarget.src = heart)}
+            onMouseOut={e => (e.currentTarget.src = props.getPinnedPlace(id)? heart: empty)}
+          />
       </div>
       <div className="body">
         <div className="detail">
