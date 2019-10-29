@@ -59,6 +59,9 @@ const Place = (props) => {
         <div className="map-container">
           <Map longtitude={longtitude} latitude={latitude} key={id}/>
         </div>
+        <div className="description">
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );

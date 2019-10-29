@@ -5,7 +5,7 @@
 }
 .detail-page > .wallpaper{
   position : absolute;
-  z-index: -111;
+  z-index: -1111;
   left : 0;
   top  : 0;
   width : 100%;
@@ -62,5 +62,15 @@
   align-self: center;
 }
 .detail-page > .body > .map-container{
-  padding: 50px 0px;
+  padding: 20px 0px;
+  height : 500px;
+}
+.detail-page > .body > .map-container > div > div {
+  width : 80%!important;
+  height : 500px!important;
+}
+
+.detail-page > .body > .description{
+  font-size: 20px;
+  line-height: 1.6;
 }

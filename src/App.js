@@ -62,6 +62,7 @@ class App extends Component {
   render() {
     const { collapsed, pinnedInfo} = this.state;
     return (
+
       <HashRouter className="container">
         { !collapsed &&
           <Navbar
@@ -84,6 +85,7 @@ class App extends Component {
               setPinnedPlace = {this.setPinnedPlace}
             />
           </Route>
+          <Footer/>
         </div>
       </HashRouter>
     );

@@ -4,20 +4,16 @@ import PropTypes from "prop-types";
 
 import "./index.css";
 
-const mapStyles = {
-  width: '80%',
-  height : "50%"
-};
-
 class LocationMap extends Component {
 
   render() {
     const { latitude, longtitude } = this.props;
     return (
         <Map
+          className="google"
           google={this.props.google}
+          style={{backgroundColor: "lightblue"}}
           zoom={16}
-          style={mapStyles}
           initialCenter={{lat : latitude, lng: longtitude}}
         >
           <Marker position={{ lat: latitude, lng: longtitude}} />

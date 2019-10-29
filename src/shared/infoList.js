@@ -19,9 +19,7 @@ export default [
     address :  "61 Deoksugung-gil, Seosomun-dong, Jung-gu, Seoul, South Korea",
     latitude : 37.564884,
     longtitude: 126.973994,
-    description: [
-      "Seoul Museum of Art"
-    ]
+    description: "Seoul Museum of Art is an art museum operated by Seoul City and located around Seoul City Hall. The Seoul Museum of Art's main branch offers a wide variety of services to the general public. Offered by the museum are low, or no-cost, public art classes in Korean traditional arts, docent programs in English and Korean and lectures open to the public in order to further its mission."
   },
   {
     id: "mmca",
@@ -33,9 +31,7 @@ export default [
     address : "30 Samcheong-ro, Samcheong-dong, Jongno-gu, Seoul, South Korea",
     latitude : 37.579673,
     longtitude: 126.980251,
-    description: [
-      "Museum of Modern and Contemporary Art"
-    ]
+    description: "MMCA Seoul is one of the four branches of MMCA : Gwacheon, Deoksugung, Seoul, and Cheongju. MMCA Seoul specializes in introducing contemporary art. As a national museum, museum owns large amount of collections especially with the rich pieces by Korean modern artists. With the reopening of the new museum in 2013, it tries to focus on different genre of arts including print, craft, photography, film, and new media."
   },
   {
     id: "leeum",
@@ -47,9 +43,7 @@ export default [
     address : "60-16 Itaewon-ro 55-gil, Hannam-dong, Yongsan-gu, Seoul, South Korea",
     latitude : 37.538403,
     longtitude: 126.998525,
-    description: [
-      "Samsung Leeum Museum of Art"
-    ]
+    description: "Leeum Samsung Museum of Art is a major museum run by Samsung Foundation fo Culture. Since 2004, Leeum hosted major contemporary art exhibition ranging from retrospective to special exhibitions. Leeum has invited Olafur Elizasson, Hiroshi Sugimoto, Calder, Anish Kapoor, Pipilotti Rist, Andy Warhol, etc. Also Leeum hosts various exhibitions regarding traditional korean art."
   },
   {
     id: "apma",
@@ -61,9 +55,7 @@ export default [
     address : "100 Hangang-daero, Hangangno-dong, Yongsan-gu, Seoul, South Korea",
     latitude : 37.528931,
     longtitude: 126.968352,
-    description: [
-      "Amore Pacific Museum of Art"
-    ]
+    description: "Amorepacific Museum of Art (APMA) reopened and rebranded the museum recently in 2018 with the opening of the new headquarter of Amore Pacific. With the interesting background as a museum run by beauty company, museum aims to promote this space to find beauty in the ordinary. "
   },
   {
     id: "sac",
@@ -75,9 +67,7 @@ export default [
     address : "2406 Nambusunhwan-ro, Seocho-dong, Seocho-gu, Seoul, South Korea",
     latitude : 37.479197,
     longtitude: 127.011665,
-    description: [
-      "Seoul Arts Center"
-    ]
+    description: "Amorepacific Museum of Art (APMA) reopened and rebranded the museum recently in 2018 with the opening of the new headquarter of Amore Pacific. With the interesting background as a museum run by beauty company, museum aims to promote this space to find beauty in the ordinary."
   },
   {
     id: "ddp",
@@ -89,9 +79,7 @@ export default [
     address : "281 Eulji-ro, Euljiro 7(chil)-ga, Jung-gu, Seoul, South Korea",
     latitude : 37.566773,
     longtitude: 127.009506,
-    description: [
-      "Dongdaemun Design Plaza"
-    ]
+    description: "Dongdamun Design Plaza (often referred as DDP) is a new landmark in Seoul with a futuristic building complex architected by Zaha Hadid. Located around the biggest fashion hub and popular tourist destination, Dongdaemun, DDP hosts diverse events including fashion shows, design exhibitions and concerts. "
   },
   {
     id: "kukje",
@@ -103,9 +91,7 @@ export default [
     address : "54 Samcheong-ro, Sogyeok-dong, Jongno-gu, Seoul, South Korea",
     latitude : 37.580696,
     longtitude: 126.980466,
-    description: [
-      "Kukje Gallery"
-    ]
+    description: "Kukje Gallery has a long history in Korean and international art scene since 1982. Kukje Gallery hosted major international artists such as Damien Hirst, Jean-Michel Basquiat, Louise Bourgeois, Bill Viola, Anish Kapoor, etc. It also appeared in major international art events with Korean artists and keeping its reputation as one of the top galleries."
   },
   {
     id: "lmoa",
@@ -117,8 +103,6 @@ export default [
     address : "South Korea, Seoul, Songpa-gu, Jamsil 6(yuk)-dong, Olympic-ro, Songpa-gu, Seoul, South Korea",
     latitude : 37.512571,
     longtitude: 127.102572,
-    description: [
-      "Lotte Museum of Art"
-    ]
+    description: "With the grand opening of LOTTE World Tower in 2018, LOTTE Museum of Art opened on 7th floor of this gigantic landmark. Including the main exhibition space, LMOA uses different areas in the building as an exhibition area. LMOA is hosting exhibition inviting artists around the world and trying to establish its position in Korean art scene."
   },
 ];
