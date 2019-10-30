@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "68b2c7d2b7abf95a6c1b341e22dff1a9",
+    "revision": "90169a033eed584f6320655b3cc51e61",
     "url": "/Seoul-Culture-City/index.html"
   },
   {
-    "revision": "6e06f0293a3e5399cc34",
-    "url": "/Seoul-Culture-City/static/css/main.86a3d0bc.chunk.css"
+    "revision": "ab5141d976e0fcae37db",
+    "url": "/Seoul-Culture-City/static/css/main.22c26c52.chunk.css"
   },
   {
     "revision": "7d9e5a4a146fa5bb6505",
     "url": "/Seoul-Culture-City/static/js/2.13aa28a7.chunk.js"
   },
   {
-    "revision": "6e06f0293a3e5399cc34",
+    "revision": "ab5141d976e0fcae37db",
     "url": "/Seoul-Culture-City/static/js/main.1eb5f872.chunk.js"
   },
   {
