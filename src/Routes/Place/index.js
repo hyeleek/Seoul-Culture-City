@@ -19,7 +19,7 @@ const Place = (props) => {
   const { id } = useParams();
   const place = InfoList.filter(info => info.id === id)[0];
   const currentIndex  = InfoList.indexOf(place);
-  const { name, wallpaper, photos, homepage, address, longtitude, latitude, description } = place;
+  const { name, wallpaper, homepage, address, longtitude, latitude, description } = place;
 
   return (
     <div className="detail-page">
@@ -50,7 +50,7 @@ const Place = (props) => {
       <div className="body">
         <div className="detail">
           <p className="title">{`Homepage : `}</p>
-          <a target="_blank" href={homepage} >{homepage}</a>
+          <a target="_blank" href={homepage} rel="noopener noreferrer">{homepage}</a>
         </div>
         <div className="detail">
           <p className="title">{`Address : `}</p>
