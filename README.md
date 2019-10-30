@@ -11,6 +11,9 @@ Created by [Hailey Kim](http://hyeleekim.com) as [PUI/SSUI](https://hcii.cmu.edu
 ### Extra Works
 - "Like" functionality : user can pin places they like and see hearted places through out the sessions
 - Google Maps API : used google map component and marked the location of current place
+- Responsive Design 
+- Move to Top Button 
+
 
 #### References
 [Modulo Operator Function](https://dev.to/maurobringolf/a-neat-trick-to-compute-modulo-of-negative-numbers-111e)
