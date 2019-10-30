@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Seoul-Culture-City/precache-manifest.0205ea916c85656c6425f6052fe841b3.js"
+  "/Seoul-Culture-City/precache-manifest.b993b5ef1decc355398dda19c18b2d2e.js"
 );
 
 self.addEventListener('message', (event) => {
