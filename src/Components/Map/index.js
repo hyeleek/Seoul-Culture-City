@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 import PropTypes from "prop-types";
-
 import "./index.css";
+
+const key = process.env.REACT_APP_API_KEY;
 
 class LocationMap extends Component {
 
@@ -29,6 +30,6 @@ LocationMap.propTypes = {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyCd8Zd9vixarIFb244B6sZQJuOcJYYwqyU',
+  apiKey: key,
   language: "en",
 })(LocationMap);
