@@ -6,7 +6,7 @@ Created by [Hailey Kim](http://hyeleekim.com) as [PUI/SSUI](https://hcii.cmu.edu
 [https://github.com/hyeleek/Seoul-Culture-City](https://hyeleek.github.io/Seoul-Culture-City)
 
 ### Preview
-![Alt Text](https://media.giphy.com/media/RlwZ7eW6r1cPU7ZCR7/giphy.gif)
+![Alt Text](https://media.giphy.com/media/Q87SUubIt5H04Hszi9/giphy.gif)
 
 ### Extra Works
 - "Like" functionality : user can pin places they like and see hearted places through out the sessions
