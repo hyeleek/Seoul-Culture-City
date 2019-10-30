@@ -14,7 +14,9 @@ Components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Hamburger from "./Components/Hamburger";
+import ScrollToTop from "./Components/ScrollToTop";
 import InfoList from "./shared/infoList.js";
+
 
 
 class App extends Component {
@@ -63,7 +65,7 @@ class App extends Component {
     const { collapsed, pinnedInfo} = this.state;
     return (
 
-      <HashRouter className="container">
+      <HashRouter className="container" ref={this.statsRef}>
         { !collapsed &&
           <Navbar
           toggleNavigation={this.toggleNavigation}
@@ -86,6 +88,7 @@ class App extends Component {
             />
           </Route>
           <Footer/>
+        <ScrollToTop />
         </div>
       </HashRouter>
     );

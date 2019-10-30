@@ -6,7 +6,7 @@ import MenuTile from "../../Components/MenuTile";
 const Home = (props) => {
   return (
     <div className="homepage">
-        <h2>SEOUL, <br/> THE CULTURE CITY</h2>
+        <h2>SEOUL, <br/> CULTURE CITY</h2>
         <p>Seoul is a must-visit destination for art-lovers. Over the past two decades, Seoul has expanded as one of the biggest culture hub in Asia. Catering to a variety of genres and tastes, I would like to share my favorites art destinations.  </p>
         <div id="title-container">
           { InfoList.map( (info, idx) => {
@@ -24,6 +24,5 @@ const Home = (props) => {
     </div>
   );
 }
-
 
 export default Home;

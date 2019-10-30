@@ -49,11 +49,11 @@ const Place = (props) => {
       </div>
       <div className="body">
         <div className="detail">
-          <p className="title">{`Homepage : `}</p>
+          <p className="title">{`Homepage `}</p>
           <a target="_blank" href={homepage} rel="noopener noreferrer">{homepage}</a>
         </div>
         <div className="detail">
-          <p className="title">{`Address : `}</p>
+          <p className="title">{`Address `}</p>
         <p>{`${ address}`}</p>
         </div>
         <div className="map-container">

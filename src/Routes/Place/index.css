@@ -62,7 +62,7 @@
   align-self: center;
 }
 .detail-page > .body > .map-container{
-  padding: 20px 0px;
+  margin: 40px 0px;
   height : 500px;
 }
 .detail-page > .body > .map-container > div > div {
@@ -73,4 +73,22 @@
 .detail-page > .body > .description{
   font-size: 20px;
   line-height: 1.6;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .detail-page > .body > .detail{
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .detail-page > .body > .detail > a{
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  .detail-page > .body > .detail > p{
+    margin : 5px;
+  }
 }

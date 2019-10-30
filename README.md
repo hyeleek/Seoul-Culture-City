@@ -14,3 +14,5 @@ Created by [Hailey Kim](http://hyeleekim.com) as [PUI/SSUI](https://hcii.cmu.edu
 
 #### References
 [Modulo Operator Function](https://dev.to/maurobringolf/a-neat-trick-to-compute-modulo-of-negative-numbers-111e)
+
+[Click Outside React Component](https://stackoverflow.com/questions/32553158/detect-click-outside-react-component)
